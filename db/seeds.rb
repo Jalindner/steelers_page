@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Team.destroy_all
+Player.destroy_all
+Team.create(name: 'Pittsburgh Steelers', nickname: 'Steelers', city: 'Pittsburgh', stadium: 'Heinz Field')
