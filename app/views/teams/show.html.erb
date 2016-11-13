@@ -1,0 +1,30 @@
+<h1><%= @team.name %></h1>
+
+<span>
+	<ul>
+		<li>Name: <%= @team.nickname %></li>
+		<li>City: <%= @team.city %></li>
+		<li>Stadium: <%= @team.stadium %></li>
+	</ul>
+</span>
+
+<span id='roster'>
+	<table id='roster-table'>
+		<tr id='roster-head'>
+			<th>Name</th>
+			<th>Jersey Number</th>
+			<th>Height</th>
+			<th>Weight</th>
+			<th>College</th>
+		</tr>
+		<% @roster.each do |player| %>
+			<tr class='player-info'>
+				<td class='name-td'><%= player.footballname %> <%= player.lastname %></td>
+				<td class='num-td'><%= player.jerseynum %></td>
+				<td class='num-td'><%= player.height %></td>
+				<td class='num-td'><%= player.weight %></td>
+				<td><%= player.college %></td>
+			</tr>
+		<% end %>
+	</table>
+</span>

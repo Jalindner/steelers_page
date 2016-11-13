@@ -4,7 +4,7 @@ class CreatePlayers < ActiveRecord::Migration[5.0]
       t.string :lastname
       t.string :footballname
       t.string :college
-      t.float :height
+      t.string :height
       t.integer :weight
       t.integer :jerseynum
       

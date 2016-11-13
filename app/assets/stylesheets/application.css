@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+#roster-table{
+	border-collapse: collapse;
+	text-align: left;
+}	
+
+.num-td{
+	text-align: center;
+}
+
+td, th{
+	padding-right: 30px;
+}
+
+.name-td{
+	padding-right: 0.2px;
+}
