@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
 	end
 
   def show
-    @team = Team.first;
+    @team = Team.first
+    @roster = Player.all
   end
 end
