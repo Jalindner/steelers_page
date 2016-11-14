@@ -14,10 +14,19 @@
  *= require_self
  */
 
+body{
+	margin: 0 auto;
+	width: 50%;
+}
 
+
+.tab-list li{
+	margin:0px 10px;
+	display: inline;
+	list-style: none;
+}
 
 #roster-table{
-	border-collapse: collapse;
 	text-align: left;
 }	
 
@@ -31,4 +40,12 @@ td, th{
 
 .name-td{
 	padding-right: 0.2px;
+}
+
+.tab{
+	display: none;
+}
+
+.tab.selected{
+	display:block;
 }
