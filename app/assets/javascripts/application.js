@@ -16,5 +16,15 @@
 //= require_tree .
 
 $(document).ready(function(){
-	$('.tabs .tab-list a').on()
+	$('#main-content .tab-list a').on('click', function(e) {
+
+		var clickedTab = $(this).attr('href');
+		console.log(clickedTab);
+
+		$('#main-content ' + clickedTab).show();
+		$('#main-content ' + clickedTab).siblings().hide();
+
+		$(this).parent('li').addClass('selected').siblings().removeClass('selected');
+		e.preventDefault();
+	})
 })
