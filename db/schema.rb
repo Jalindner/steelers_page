@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20161110232248) do
     t.string   "lastname"
     t.string   "footballname"
     t.string   "college"
-    t.float    "height"
+    t.string   "height"
     t.integer  "weight"
     t.integer  "jerseynum"
     t.datetime "created_at",   null: false
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20161110232248) do
     t.string   "nickname"
     t.string   "city"
     t.string   "stadium"
+    t.string   "website"
+    t.string   "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

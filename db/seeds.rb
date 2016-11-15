@@ -15,7 +15,7 @@ roster = [{"LastName":"Feiler","FootballName":"Matt","Season":2016,"AccruedSeaso
 
 Team.destroy_all
 Player.destroy_all
-Team.create(name: 'Pittsburgh Steelers', nickname: 'Steelers', city: 'Pittsburgh', stadium: 'Heinz Field')
+Team.create(name: 'Pittsburgh Steelers', nickname: 'Steelers', city: 'Pittsburgh', stadium: 'Heinz Field', website: "http://www.steelers.com/", logo: "PIT_logo-80x90.gif")
 
 roster.each do |x|
   Player.create(lastname: x[:LastName], footballname: x[:FootballName], college: x[:College], height: x[:Height], weight: x[:Weight], jerseynum: x[:JerseyNumber])
