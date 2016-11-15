@@ -13,9 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
 html{
 	height: 100%;
 }
+
 body{
 	margin: 0 auto;
 	width: 50%;
@@ -25,11 +27,8 @@ body{
 	background-repeat: no-repeat;
 }
 
-
-
 #tab-content{
 	background-color: white;
-
 }
 
 .tab-list{
@@ -37,32 +36,41 @@ body{
 }
 
 .tab-list li{
-	padding: 7px 5px;
+	padding: 5px 3px;
+	margin: 0px 5px;
 	display: inline;
 	list-style: none;
 	font-size: 15px;
 	border: solid 2px;
+	background:#d3dce4;
+}
+
+.tab-list a{
+    font-size:12px;
+    font-weight:600;
+    color:#4c4c4c;
+    text-decoration: none;
+    outline: 0;
+}
+
+.tab-list a:hover, a:active, a:focus{
+	text-decoration: underline;
 }
 
 #roster-table{
 	text-align: left;
 }	
-#roster-table th, td{
+#roster-table th, tr{
 	font-size: 12px;
 	padding-right: 7px;
+	padding-bottom: 8px
+	border: 2px dotted black;
 }
 
 .num-td{
 	text-align: center;
 }
 
-td, th{
-	padding-right: 30px;
-}
-
-.name-td{
-	padding-right: 0.2px;
-}
 
 .tab{
 	display: none;
