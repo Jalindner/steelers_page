@@ -5,6 +5,8 @@ class CreateTeams < ActiveRecord::Migration[5.0]
       t.string :nickname
       t.string :city
       t.string :stadium
+      t.string :website
+      t.string :logo
       t.timestamps
     end
   end
