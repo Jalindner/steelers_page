@@ -63,11 +63,17 @@ body{
 	text-align: left;
 }	
 
-#roster-table th, tr{
+#roster-table th{
 	font-size: 12px;
 	padding-right: 7px;
-	padding-bottom: 8px
-	border: 2px solid black;
+	padding-bottom: 8px;
+	border-bottom: 2px solid black;
+}
+
+#roster-table td{
+	margin-top: 5px;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted black;
 }
 
 .num-td{
