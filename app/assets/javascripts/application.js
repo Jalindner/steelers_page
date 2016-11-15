@@ -19,11 +19,11 @@ $(document).ready(function(){
 	$('#main-content .tab-list a').on('click', function(e) {
 
 		var clickedTab = $(this).attr('href');
-		console.log(clickedTab);
+		console.log($('#main-content ' + clickedTab).siblings());
 
 		$('#main-content ' + clickedTab).show();
 		$('#main-content ' + clickedTab).siblings().hide();
-
+		
 		$(this).parent('li').addClass('selected').siblings().removeClass('selected');
 		e.preventDefault();
 	})

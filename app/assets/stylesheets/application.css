@@ -62,11 +62,12 @@ body{
 #roster-table{
 	text-align: left;
 }	
+
 #roster-table th, tr{
 	font-size: 12px;
 	padding-right: 7px;
 	padding-bottom: 8px
-	border: 2px solidtea black;
+	border: 2px solid black;
 }
 
 .num-td{
@@ -79,7 +80,7 @@ body{
 }
 
 .tab.selected{
-	display:block;
+	display: block;
 }
 
 .team-logo{
