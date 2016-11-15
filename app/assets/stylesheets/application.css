@@ -13,22 +13,44 @@
  *= require_tree .
  *= require_self
  */
-
+html{
+	height: 100%;
+}
 body{
 	margin: 0 auto;
 	width: 50%;
+	height: 100%;
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 7%, rgba(219,219,219,1) 22%, rgba(254,254,254,1) 53%, rgba(254,254,254,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(7%, rgba(209,209,209,1)), color-stop(22%, rgba(219,219,219,1)), color-stop(53%, rgba(254,254,254,1)), color-stop(100%, rgba(254,254,254,1)));
+	background-repeat: no-repeat;
 }
 
 
+
+#tab-content{
+	background-color: white;
+
+}
+
+.tab-list{
+	width: 75%;
+}
+
 .tab-list li{
-	margin:0px 10px;
+	padding: 7px 5px;
 	display: inline;
 	list-style: none;
+	font-size: 15px;
+	border: solid 2px;
 }
 
 #roster-table{
 	text-align: left;
 }	
+#roster-table th, td{
+	font-size: 12px;
+	padding-right: 7px;
+}
 
 .num-td{
 	text-align: center;
@@ -48,4 +70,10 @@ td, th{
 
 .tab.selected{
 	display:block;
+}
+
+@media (max-width: 640px){
+	.extra-info{
+		display: none;
+	}
 }

@@ -1,5 +1,6 @@
-<h2 id="team-banner"><%= @team.name %></h2>
-
+<span id="banner">
+	<h2 id="name-banner"><%= @team.name %></h2>
+</span>
 <main id="main-content">
 
 	<ul class='tab-list'>
@@ -21,17 +22,17 @@
 				<tr id='roster-head'>
 					<th>Name</th>
 					<th>Jersey Number</th>
-					<th>Height</th>
-					<th>Weight</th>
-					<th>College</th>
+					<th class='extra-info'>Height</th>
+					<th class='extra-info'>Weight</th>
+					<th class='extra-info'>College</th>
 				</tr>
 				<% @roster.each do |player| %>
 					<tr class='player-info'>
 						<td class='name-td'><%= player.footballname %> <%= player.lastname %></td>
 						<td class='num-td'><%= player.jerseynum %></td>
-						<td class='num-td'><%= player.height %></td>
-						<td class='num-td'><%= player.weight %></td>
-						<td><%= player.college %></td>
+						<td class='num-td extra-info'><%= player.height %></td>
+						<td class='num-td extra-info'><%= player.weight %></td>
+						<td class='extra-info'><%= player.college %></td>
 					</tr>
 				<% end %>
 			</table>
