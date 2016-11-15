@@ -1,5 +1,5 @@
 <span id="banner">
-	<%=image_tag("PIT_logo-80x90.gif", class: "team-logo")%>
+	<%=image_tag(@team.logo, class: "team-logo")%>
 	<h2 id="name-banner"><%= @team.name %></h2>
 </span>
 <main id="main-content">
@@ -15,8 +15,7 @@
 				<li>Name: <%= @team.nickname %></li>
 				<li>City: <%= @team.city %></li>
 				<li>Stadium: <%= @team.stadium %></li>
-				<li>Website: <a href="http://www.steelers.com/">http://www.steelers.com/</a></li>
-			</ul>
+				<li>Website: <a href=<%= @team.website %>><%= @team.website %></a></li>
 		</span>
 
 		<span id='roster' class='tab'>
